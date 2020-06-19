@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+	파일생성일 2020-03-30
+	파일수정일 2020-04-14
+	작성자: 한현진
+*/
+
+/* 
+	에릭마이어	https://meyerweb.com/eric/tools/css/reset/
+	야후	https://yuilibrary.com/yui/docs/cssreset/
+	다음	http://darum.daum.net/convention/css/css_convention
+*/
+
+html {font-family: 'Noto Serif KR', serif; font-size:10px;/* rem 사용*/} 
+body {min-height: 800px;}
+body, div, h1, h2, h3, h4, h5, h6, p, pre, code, form, fieldset,legend, textarea, blockquote, th, td, input, select, textarea, button,dl,dt,dd {margin: 0; padding: 0;}
+header, nav, section, article, aside, footer{display: block; margin: 0; padding: 0;}
+ul, ol {margin: 0; padding: 0;list-style: none;}
+fieldset{border:none;}
+table {table-layout: fixed; border-collapse: collapse; border-spacing: 0;}
+a:link, a:visited, a:hover, a:active {text-decoration: none;}
+h1, h2, h3, h4, h5, h6, p, a, li, ul, ol, small, span, em, i, b, strong, input{color: #000;}
+u, s{text-decoration: none;}

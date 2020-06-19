@@ -1,0 +1,61 @@
+<div class="subfooter_inner">
+	<ul>
+		<li><a href="#">박물관소개</a></li>
+		<li><a href="#">누리집지도</a></li>
+		<li><a href="#">관람안내</a></li>
+		<li><a href="#">개인정보 처리방침</a></li>
+		<li><a href="#">찾아오시는 길</a></li>
+		<li><a href="#">CCTV 운영관리방침</a></li>
+		<li><a href="#">전시해설저작권정책</a></li>
+	</ul>
+	<ol class="site">
+		<li>
+			<a href="#none">다른 박물관 둘러보기</a>
+			<ol>
+				<li><a href="#">국립중앙박물관</a></li>
+				<li><a href="#">국립광주박물관</a></li>
+				<li><a href="#">국립전주박물관</a></li>
+				<li><a href="#">국립대구박물관</a></li>
+				<li><a href="#">국립부여박물관</a></li>
+				<li><a href="#">국립공주박물관</a></li>
+				<li><a href="#">국립진주박물관</a></li>
+				<li><a href="#">국립청주박물관</a></li>
+				<li><a href="#">국립김해박물관</a></li>
+				<li><a href="#">국립제주박물관</a></li>
+				<li><a href="#">국립춘천박물관</a></li>
+				<li><a href="#">국립나주박물관</a></li>
+				<li><a href="#">국립익산박물관</a></li>
+			</ol>
+		</li>
+		<li>
+			<a href="#none" >관련사이트 바로가기</a>
+			<ol>
+				<li><a href="#">국립박물관문화재단</a></li>
+				<li><a href="#">국립중앙박물관회</a></li>
+				<li><a href="#">사단법인한국박물관회</a></li>
+			</ol>
+		</li>
+	</ol>
+	<p>
+		(38171) 경상북도 경주시 일정로 186 국립경주박물관&emsp;<span>Tel: 054-740-7500</span>&emsp;Fax: 054-740-7522<br>
+		Copyright Gyeongju National Museum. All rights reserved
+	</p>
+	<div>
+		<a href="#"><img src="/gjmu/images/sub/img_footer1.png" alt="굿콘텐츠서비스 인증"></a>
+		<a href="#"><img src="/gjmu/images/sub/img_footer2.png" alt="웹접근성 인증"></a>
+		<a href="#"><img src="/gjmu/images/sub/img_footer3.png" alt="공공누리 공공저작물 자유이용허락"></a>
+	</div>
+</div>
+<script>
+$(".site ol").hide();
+$(".site > li > a").click(function(){
+	if($(this).next("ol").is(":visible")){
+		$(this).next("ol").hide();
+	} else {
+		if($(".site ol").is(":visible")){
+			$(".site ol").hide();
+		}
+		$(this).next("ol").show();
+	}
+})
+</script>

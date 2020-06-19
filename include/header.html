@@ -1,0 +1,61 @@
+<h1><a href="/gjmu"></a></h1>
+<ol>
+	<li><a href="https://www.facebook.com/kgjnm" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+	<li><a href="https://www.instagram.com/gnmuseum" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+	<li><a href="https://www.youtube.com/channel/UC2n7AjCn0j0Ie3fUDtvUM2w" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+</ol>
+<nav>
+	<ul class="depth1">
+		<li>
+			<a href="#">언어</a>
+			<ul class="depth2">
+				<li><a href="#">한국어</a></li>
+				<li><a href="#" lang="en">English</a></li>
+				<li><a href="#" lang="ja">日本語</a></li>
+				<li><a href="#" lang="zh">中國語</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">소개</a>
+			<ul class="depth2">
+				<li><a href="#">박물관 소개</a></li>
+				<li><a href="#">오시는 길</a></li>
+				<li><a href="#">시설 안내</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">전시</a>
+			<ul class="depth2">
+				<li><a href="#">신라역사관</a></li>
+				<li><a href="#">신라미술관</a></li>
+				<li><a href="#">월지관</a></li>
+				<li><a href="#">신라천년보고</a></li>
+				<li><a href="#">특별전시</a></li>
+				<li><a href="#">옥외전시</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">이용</a>
+			<ul class="depth2">
+				<li><a href="/gjmu/sub4_1.html">공지사항</a></li>
+				<li><a href="#">교육</a></li>
+				<li><a href="#">예약</a></li>
+				<li><a href="#">문의하기</a></li>
+				<li><a href="#">전시물</a></li>
+				<li><a href="#">전시관 VR</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+<script>
+	/* nav */
+	function nav(){
+		$(".depth1 li").mouseover(function(){
+			$(this).find(".depth2").stop().slideDown();
+		})
+		$(".depth1 li").mouseleave(function(){
+			$(this).find(".depth2").stop().slideUp();
+		})
+	}
+	nav();
+</script>
