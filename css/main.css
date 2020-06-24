@@ -7,7 +7,7 @@
 #wrap{width: 100%;min-width: 1600px;overflow: hidden;}
 #header{position: fixed;top: 0;left: 0;width:100%;height: 60px;background-color: rgba(0, 0, 0, 0.7);z-index: 10;}
 #header h1{float: left; margin-left: 15px; padding: 10px 0;}
-#header h1 a{display: block; width: 172px;height: 40px;background-image: url("/museum/images/main/img_logo.png");}
+#header h1 a{display: block; width: 172px;height: 40px;background-image: url("/gjmu/images/main/img_logo.png");}
 
 #header ol{float: right;margin: 15px;}
 #header ol li{float: left; margin-left: 20px;}
@@ -26,9 +26,9 @@
 /* mainvisual */
 .mainvisual{overflow: hidden;width: 100%;height: 900px;}
 .mainvisual .mainbanner:nth-child(1), .mainvisual div:nth-child(2),.mainvisual div:nth-child(3){position: absolute;width: 100%;min-width: 1600px;overflow: hidden;height: 900px;background-size: cover;animation-name: mainbanner;animation-duration:18s;animation-iteration-count: infinite;}
-.mainvisual .mainbanner:nth-child(1){background-image: url("/museum/images/main/img_bg_mainvisual1.jpg");}
-.mainvisual .mainbanner:nth-child(2){background-image: url("/museum/images/main/img_bg_mainvisual2.jpg"); opacity:0; animation-delay: 6s;}
-.mainvisual .mainbanner:nth-child(3){background-image: url("/museum/images/main/img_bg_mainvisual3.jpg");opacity:0;animation-delay: 12s;}
+.mainvisual .mainbanner:nth-child(1){background-image: url("/gjmu/images/main/img_bg_mainvisual1.jpg");}
+.mainvisual .mainbanner:nth-child(2){background-image: url("/gjmu/images/main/img_bg_mainvisual2.jpg"); opacity:0; animation-delay: 6s;}
+.mainvisual .mainbanner:nth-child(3){background-image: url("/gjmu/images/main/img_bg_mainvisual3.jpg");opacity:0;animation-delay: 12s;}
 
 @keyframes mainbanner{
 	0% {opacity: 0;}
@@ -46,7 +46,7 @@
 .mainvisual .mainvisual_inner div h2{clear: both;padding: 208px 0 63px 40px;font-weight: 700;font-size: 4.8rem;color: #fff;}
 
 /* history */
-.history{overflow: hidden; width: 100%;background-image: url("/museum/images/main/img_bg_history.jpg");background-size: cover;}
+.history{overflow: hidden; width: 100%;background-image: url("/gjmu/images/main/img_bg_history.jpg");background-size: cover;}
 .history_inner, .beauty_inner, .news_inner{margin: 100px auto; width: 1600px;}
 .history h2, .beauty h2, .news h2{font-weight: 700; font-size: 4.8rem; color: #fff;}
 .history h2::after, .beauty h2::after, .news h2::after{content: ""; display: block; margin: 10px 0 82px; width: 54px; height: 8px; background-color:#efc525; }
@@ -58,7 +58,7 @@
 .history dl dd.on img{left: 0; width: 250px; height: 400px;}
 
 .history dl dd .history_hover{display: none;}
-.history dl dd.on .history_hover{display: block; position: absolute; left: 0; top: 0; width: 250px; height: 400px; background-image: url("/museum/images/main/img_history_hover.png"); transition: all 0.5s linear;opacity: 0;}
+.history dl dd.on .history_hover{display: block; position: absolute; left: 0; top: 0; width: 250px; height: 400px; background-image: url("/gjmu/images/main/img_history_hover.png"); transition: all 0.5s linear;opacity: 0;}
 .history dl dd.on:hover .history_hover{opacity: 1;}
 .history dl dd.on .history_hover s{position: absolute; left: 20px;bottom: 20px;}
 .history dl dd.on .history_hover s >a{display: block; float: left;margin-bottom: 16px;font-weight: 700;font-size: 1.6rem;letter-spacing: -0.7px;color: #fff;}
@@ -73,7 +73,7 @@
 .history dt.on span::before{background-color:#efc525;}
 
 /* beauty */
-.beauty{overflow: hidden; background-image: url("/museum/images/main/img_bg_beauty.jpg"); background-size: cover;}
+.beauty{overflow: hidden; background-image: url("/gjmu/images/main/img_bg_beauty.jpg"); background-size: cover;}
 .beauty .beauty_inner div{position: relative; width: 1600px; height: 790px;}
 
 .beauty .beauty_inner a{position: absolute; top: 0; left: 0; display: block;}
@@ -106,12 +106,12 @@
 .beauty .beauty_inner a:hover .beauty_hover{opacity: 1;}
 
 /* news */
-.news{overflow: hidden;padding-bottom: 128px;width: 100%;background-image: url("/museum/images/main/img_bg_news.jpg");background-size: cover;}
+.news{overflow: hidden;padding-bottom: 128px;width: 100%;background-image: url("/gjmu/images/main/img_bg_news.jpg");background-size: cover;}
 .news_inner{margin-bottom: 0;}
 .news .notice{float: left; padding: 20px; width: 345px; height: 360px; background-color: #594b40;}
 .news .notice h3, .news .calendar h3, .news .information h3 {position: relative; font-weight: 700; font-size: 2.4rem; text-align: center; color: #fff;}
-.news .notice h3::before, .news .calendar h3::before{content: "";position: absolute; top: 0; left: 50%; margin-left: -30px; width: 10px;height: 10px;background-image: url("/museum/images/main/img_bg_notice.png");}
-.news .notice h3::after, .news .calendar h3::after{content: "";position: absolute; bottom: 0; left: 50%; margin-left: 20px; width: 10px;height: 10px;background-image: url("/museum/images/main/img_bg_notice.png"); transform: rotate(180deg);}
+.news .notice h3::before, .news .calendar h3::before{content: "";position: absolute; top: 0; left: 50%; margin-left: -30px; width: 10px;height: 10px;background-image: url("/gjmu/images/main/img_bg_notice.png");}
+.news .notice h3::after, .news .calendar h3::after{content: "";position: absolute; bottom: 0; left: 50%; margin-left: 20px; width: 10px;height: 10px;background-image: url("/gjmu/images/main/img_bg_notice.png"); transform: rotate(180deg);}
 .news .notice h3::before{margin-left: -60px;}
 .news .notice h3::after{margin-left: 50px;}
 .news .notice dl{clear: both;width: 345px;border-bottom: 1px solid #fff;font-weight: 400;font-size: 1.8rem;color: #fff;line-height: 43px;}
@@ -123,8 +123,8 @@
 
 .news .calendar{float: left; margin: 0 0 20px 20px; padding: 20px; width: 345px; height: 360px; background-color: #fff;}
 .news .calendar h3, .news .information h3{color: #000;}
-.news .calendar h3::before{background-image: url("/museum/images/main/img_bg_calendar.png");}
-.news .calendar h3::after{background-image: url("/museum/images/main/img_bg_calendar.png");}
+.news .calendar h3::before{background-image: url("/gjmu/images/main/img_bg_calendar.png");}
+.news .calendar h3::after{background-image: url("/gjmu/images/main/img_bg_calendar.png");}
 .news .calendar li{float: left; width: 49px; height: 49px;}
 .news .calendar ol li:nth-child(1) span{color: #cc0000;}
 .news .calendar ol li:nth-child(7) span{color: #3500cc;}
