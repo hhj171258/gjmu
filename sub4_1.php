@@ -127,7 +127,7 @@
 
 							echo "<tr class='fixed'>";
 							echo "<td>공지</td>";
-							echo "<td><a href='/gjmu/sub4_1_cont.php?numb=$data[0]'>$data[1]&pageNow=$pageNow</a></td>";
+							echo "<td><a href='/gjmu/sub4_1_cont.php?numb=$data[0]&pageNow=$pageNow'>$data[1]</a></td>";
 							echo "<td>$data[2]</td>";
 							echo "<td>$data[3]</td>";
 							echo "<td>$data[4]</td>";
