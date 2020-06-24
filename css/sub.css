@@ -24,7 +24,7 @@
 #subfooter .subfooter_inner .site > li ol li a:hover{background-color: #222;}
 #subfooter .subfooter_inner .site > li:first-child ol li a{width: 131px;transition: all 0.2s ease;}
 
-#subfooter .subfooter_inner p{clear: both;float: left;margin: 16px 0;padding-left: 160px;background-image: url("/museum/images/sub/img_logo_gray.png");background-repeat: no-repeat;background-position: 0px 14px;font-weight: 400;font-size: 1.4rem;color: #fff;line-height: 30px;}
+#subfooter .subfooter_inner p{clear: both;float: left;margin: 16px 0;padding-left: 160px;background-image: url("/gjmu/images/sub/img_logo_gray.png");background-repeat: no-repeat;background-position: 0px 14px;font-weight: 400;font-size: 1.4rem;color: #fff;line-height: 30px;}
 #subfooter .subfooter_inner div{float: right;margin: 24px 0;}
 #subfooter .subfooter_inner div a{float: left; display: block; margin-left: 32px;}
 
@@ -34,7 +34,7 @@
 .subvisual .lnb .lnb_inner::after, .notice .page::after{content:""; display:block; clear: both;}
 
 /* subvisual */
-.subvisual{padding-top: 60px;width: 100%;height: 310px;background-image: url("/museum/images/sub/img_subvisual.jpg");background-repeat: no-repeat;}
+.subvisual{padding-top: 60px;width: 100%;height: 310px;background-image: url("/gjmu/images/sub/img_subvisual.jpg");background-repeat: no-repeat;}
 .subvisual h2{font-weight: 500;font-size: 4rem;text-align: center;line-height: 260px;text-shadow: 0px 6px 6px #000;color: #fff;}
 .subvisual .lnb{width: 100%; height: 50px; background-color: #594b40;}
 .subvisual .lnb .lnb_inner{margin: 0 auto; width: 1200px;}
@@ -43,9 +43,9 @@
 .subvisual .lnb .lnb_inner li a{display: block; padding-left: 16px; width: 164px; height: 50px; border-right: 1px solid #fff; font-weight: 400; font-size: 1.8rem; color: #fff; line-height: 50px;}
 .subvisual .lnb .lnb_inner li[class] a{padding: 0; width: 50px;}
 .subvisual .lnb .lnb_inner li[class] a::after{display: none;}
-.subvisual .lnb .lnb_inner li.home{border-left: 1px solid #fff; background-image: url("/museum/images/sub/icon_subvisual1.png");}
-.subvisual .lnb .lnb_inner li.print{margin-left: 683px; border-left: 1px solid #fff; background-image: url("/museum/images/sub/icon_subvisual2.png");}
-.subvisual .lnb .lnb_inner li.share{background-image: url("/museum/images/sub/icon_subvisual3.png");}
+.subvisual .lnb .lnb_inner li.home{border-left: 1px solid #fff; background-image: url("/gjmu/images/sub/icon_subvisual1.png");}
+.subvisual .lnb .lnb_inner li.print{margin-left: 683px; border-left: 1px solid #fff; background-image: url("/gjmu/images/sub/icon_subvisual2.png");}
+.subvisual .lnb .lnb_inner li.share{background-image: url("/gjmu/images/sub/icon_subvisual3.png");}
 
 .subvisual .lnb .lnb_inner ol{position: absolute;width: 178px;border: 1px solid #594b40;color: #fff;}
 .subvisual .lnb .lnb_inner ol li a{width: 162px; height: 30px; border: none; font-size: 1.4rem;line-height: 30px;color: #000;transition: all 0.2s ease;}
@@ -73,12 +73,12 @@
 /* table */
 .notice table{clear: both;width: 1180px;table-layout:fixed;border-collapse:collapse;border-spacing:0;border-top: 2px solid #000;font-family: 'Noto Sans KR', sans-serif;font-weight: 400;font-size: 1.6rem;line-height: 50px;}
 .notice table tr:hover{background-color: #f2f2f2;}
-.notice table tr.fixed td:nth-child(1){color: transparent;background-image: url("/museum/images/sub/icon_notice.png");background-repeat: no-repeat;background-position: 38px 15px;}
+.notice table tr.fixed td:nth-child(1){color: transparent;background-image: url("/gjmu/images/sub/icon_notice.png");background-repeat: no-repeat;background-position: 38px 15px;}
 .notice table th,.notice table td{text-align: center; border-bottom: 1px solid #000;}
 .notice table th:nth-child(1),.notice table th:nth-child(5),.notice table th:nth-child(6), .notice table td:nth-child(1), .notice table td:nth-child(5), .notice table td:nth-child(6){width: 100px;}
 .notice table td:nth-child(6) a{margin: 0 auto; display: block; width: 24px; height: 28px; color: transparent;}
-.notice table td:nth-child(6).hwp a{background-image: url("/museum/images/sub/icon_file1.png");}
-.notice table td:nth-child(6).zip a{background-image: url("/museum/images/sub/icon_file2.png");}
+.notice table td:nth-child(6).hwp a{background-image: url("/gjmu/images/sub/icon_file1.png");}
+.notice table td:nth-child(6).zip a{background-image: url("/gjmu/images/sub/icon_file2.png");}
 .notice table th:nth-child(3),.notice table th:nth-child(4),.notice table td:nth-child(3), .notice table td:nth-child(4){width: 130px;}
 .notice table td:nth-child(2){overflow: hidden;text-overflow: ellipsis;white-space: nowrap;text-align: left;}
 .notice table td:nth-child(2) a:hover{text-decoration: underline;}
@@ -109,7 +109,7 @@
 .notice .notice_detail .notice_detail_title ol{padding-left: 20px;}
 .notice .notice_detail .notice_detail_title ol li{height: 50px;}
 .notice .notice_detail .notice_detail_title ol li a{display: block; float: left; margin: 11px 16px 11px 0; padding-left:40px; height: 28px; font-weight: 400; font-size: 1.4rem; line-height: 28px;}
-.notice .notice_detail .notice_detail_title ol li a.hwp{background-image: url("/museum/images/sub/icon_file1.png"); background-repeat: no-repeat;}
+.notice .notice_detail .notice_detail_title ol li a.hwp{background-image: url("/gjmu/images/sub/icon_file1.png"); background-repeat: no-repeat;}
 .notice .notice_detail .notice_detail_title ol li a:hover, .notice .notice_detail .notice_detail_page dd a:hover{text-decoration: underline;}
 .notice .notice_detail .notice_detail_title ol li button{display: block;float: left;margin: 14px auto;width: 89px;height: 22px;border: 1px solid #999;border-radius: 12px;font-weight: 400;font-size: 1.2rem;line-height: 22px;background: transparent;cursor: pointer;}
 .notice .notice_detail .notice_detail_title ol li i{font-weight: 600;font-size: 1.4rem;color: #efc525; line-height: 22px;}
