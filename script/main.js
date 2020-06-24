@@ -12,10 +12,10 @@ nav();
 
 /* history */
 function history(n){
-	$(".history dd").removeClass("on");
-	$(".history dd").eq(n).addClass("on");
-	$(".history dt").removeClass("on");
-	$(".history dt").eq(n).addClass("on");
+	$(".history li:not(.btn)").removeClass("on");
+	$(".history li:not(.btn)").eq(n).addClass("on");
+	$(".history li.btn").removeClass("on");
+	$(".history li.btn").eq(n).addClass("on");
 }
 
 

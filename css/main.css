@@ -1,7 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 /* float */
-#header::after, .depth1::after,.mainvisual div::after,.history dl::after, .history .history_hover::after, .news .notice dl::after, .news .calendar ul::after, .news .calendar ol::after, .news .information .information_inner::after, #footer .footer_inner::after,.news .calendar div::after, footer::after{content:""; display:block; clear: both;}
+#header::after,
+.depth1::after,
+.mainvisual div::after,
+.history ul::after,
+.history .history_hover::after,
+.news .notice dl::after,
+.news .calendar ul::after,
+.news .calendar ol::after,
+.news .information .information_inner::after,
+#footer .footer_inner::after,
+.news .calendar div::after,
+footer::after{content:""; display:block; clear: both;}
 
 /* header */
 #wrap{width: 100%;min-width: 1600px;overflow: hidden;}
@@ -50,27 +61,26 @@
 .history_inner, .beauty_inner, .news_inner{margin: 100px auto; width: 1600px;}
 .history h2, .beauty h2, .news h2{font-weight: 700; font-size: 4.8rem; color: #fff;}
 .history h2::after, .beauty h2::after, .news h2::after{content: ""; display: block; margin: 10px 0 82px; width: 54px; height: 8px; background-color:#efc525; }
-.history dl{position: relative;}
-.history dl::before{position: absolute;top: 440px;content: "";display: block;clear: both;width: 100%;height: 3px;background-color: rgba(255,255,255,0.5);}
-.history dl dd{position: relative; float: left; margin-left: 20px; width: 250px; height: 400px;}
-.history dl dd:first-child{margin-left:0;}
-.history dl dd img{position: absolute; left: 50px; bottom: 0; width: 150px; height: 240px; transition: all 0.8s ease-in; transform-origin: bottom center;}
-.history dl dd.on img{left: 0; width: 250px; height: 400px;}
+.history ul{position: relative;}
+.history ul:before{position: absolute; top: 440px; content: "";display: block;clear: both;width: 100%;height: 3px;background-color: rgba(255,255,255,0.5);}
+.history ul li:not(.btn){position: relative; float: left; margin-left: 20px; width: 250px; height: 400px;}
+.history ul li:not(.btn):first-child{margin-left:0;}
+.history ul li:not(.btn) img{position: absolute; left: 50px; bottom: 0; width: 150px; height: 240px; transition: all 0.5s ease-in; transform-origin: bottom center;}
+.history ul li:not(.btn).on img{left: 0; width: 250px; height: 400px;}
 
-.history dl dd .history_hover{display: none;}
-.history dl dd.on .history_hover{display: block; position: absolute; left: 0; top: 0; width: 250px; height: 400px; background-image: url("/gjmu/images/main/img_history_hover.png"); transition: all 0.5s linear;opacity: 0;}
-.history dl dd.on:hover .history_hover{opacity: 1;}
-.history dl dd.on .history_hover s{position: absolute; left: 20px;bottom: 20px;}
-.history dl dd.on .history_hover s >a{display: block; float: left;margin-bottom: 16px;font-weight: 700;font-size: 1.6rem;letter-spacing: -0.7px;color: #fff;}
-.history dl dd.on .history_hover p{clear: both; width: 210px; font-weight: 400; font-size: 1.4rem;word-break: keep-all;}
-.history dl dd.on .history_hover p a{color: #fff;}
+.history ul li:not(.btn) .history_hover{display: none;}
+.history ul li:not(.btn).on .history_hover{display: block; position: absolute; left: 0; top: 0; width: 250px; height: 400px; background-image: url("/gjmu/images/main/img_history_hover.png"); transition: all 0.3s linear;opacity: 0;}
+.history ul li:not(.btn).on:hover .history_hover{opacity: 1;}
+.history ul li:not(.btn).on .history_hover s{position: absolute; left: 20px;bottom: 20px;}
+.history ul li:not(.btn).on .history_hover s > a:first-child{display: block; float: left;margin-bottom: 16px;font-weight: 700;font-size: 1.6rem;letter-spacing: -0.7px;color: #fff;}
+.history ul li:not(.btn).on .history_hover s a + a{clear: both;display: block;width: 210px;font-weight: 400;font-size: 1.4rem;word-break: keep-all;color: #fff;}
 
-.history dt{position: relative;float: left;margin-top: 102px;margin-left: 20px;width: 250px;text-align: center;}
-.history dt:first-of-type{margin-left: 0;}
-.history dt span{font-weight: 500;font-size: 3.2rem; color: #fff;cursor: pointer;}
-.history dt span::before{content:""; position: absolute; left: 115px; top: -71px;  display: block; width: 20px; height: 20px; border-radius: 10px; background-color: #fff;}
-.history dt.on span{color: #efc525;}
-.history dt.on span::before{background-color:#efc525;}
+.history li.btn{position: relative;float: left;margin-top: 102px; width: 250px;text-align: center;}
+.history li.btn + li.btn{margin-left: 20px;}
+.history li.btn span{font-weight: 500;font-size: 3.2rem; color: #fff;cursor: pointer;}
+.history li.btn span::before{content:""; position: absolute; left: 115px; top: -71px;  display: block; width: 20px; height: 20px; border-radius: 10px; background-color: #fff;}
+.history li.btn.on span{color: #efc525;}
+.history li.btn.on span::before{background-color:#efc525;}
 
 /* beauty */
 .beauty{overflow: hidden; background-image: url("/gjmu/images/main/img_bg_beauty.jpg"); background-size: cover;}
