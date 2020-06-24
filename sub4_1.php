@@ -123,7 +123,7 @@
 						$result = mysqli_query($db, $sql);
 						while ($data = mysqli_fetch_array($result))
 						{
-							$file = substr($data[4], -3);
+							$file = substr($data[5], -3);
 
 							echo "<tr class='fixed'>";
 							echo "<td>공지</td>";
@@ -131,7 +131,7 @@
 							echo "<td>$data[2]</td>";
 							echo "<td>$data[3]</td>";
 							echo "<td>$data[4]</td>";
-							echo "<td class='$file'><a href='/gjmu/board/$data[4]'>$file</a></td>";
+							echo "<td class='$file'><a href='/gjmu/board/$data[5]'>$file</a></td>";
 						}
 
 						//공지를 제외한 나머지
