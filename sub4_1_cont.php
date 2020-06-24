@@ -65,7 +65,8 @@
 			mysqli_select_db($db, 'hhj171258');
 		 	
 			$numb = $_REQUEST["numb"];
-			
+			$pageNow = $_REQUEST["pageNow"];
+
 			if($numb <> "" )
 			{	
 				if($_COOKIE["cunt".$numb] <> "1")
@@ -133,7 +134,7 @@
 					<dt class="fas fa-chevron-down">다음글</dt>
 					<dd><a href="/gjmu/sub4_1_cont.php?numb=<?=$next?>"><?=$titlNext?></a></dd>
 				</dl>
-				<a class="list" href="/gjmu/sub4_1.php">목록</a>
+				<a class="list" href="/gjmu/sub4_1.php?pageNow=<?=$pageNow?>">목록</a>
 			</div>
 		</div>
 		<!--// notice -->
