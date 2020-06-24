@@ -43,7 +43,7 @@
 					<li>
 						<a href="#none">공지사항</a>
 						<ol>
-							<li><a href="/gjmu/sub4_1.html">공지사항</a></li>
+							<li><a href="/gjmu/sub4_1.php">공지사항</a></li>
 							<li><a href="#">교육</a></li>
 							<li><a href="#">예약</a></li>
 							<li><a href="#">문의하기</a></li>
@@ -130,8 +130,8 @@
 							echo "<td><a href='/gjmu/sub4_1_cont.php?numb=$data[0]'>$data[1]</a></td>";
 							echo "<td>$data[2]</td>";
 							echo "<td>$data[3]</td>";
-							echo "<td></td>";
-							echo "<td class='$file'><a href='#'>$file</a></td>";
+							echo "<td>$data[4]</td>";
+							echo "<td class='$file'><a href='/gjmu/board/$data[4]'>$file</a></td>";
 						}
 
 						//공지를 제외한 나머지
@@ -145,15 +145,15 @@
 						$result = mysqli_query($db, $sql);
 						while ($data = mysqli_fetch_array($result))
 						{
-							$file = substr($data[4], -3);
+							$file = substr($data[5], -3);
 
 							echo "<tr>";
 							echo "<td>$data[0]</td>";
 							echo "<td><a href='/gjmu/sub4_1_cont.php?numb=$data[0]'>$data[1]</a></td>";
 							echo "<td>$data[2]</td>";
 							echo "<td>$data[3]</td>";
-							echo "<td></td>";
-							echo "<td class='$file'><a href='#'>$file</a></td>";
+							echo "<td>$data[4]</td>";
+							echo "<td class='$file'><a href='/gjmu/board/$data[5]'>$file</a></td>";
 						}
 					 ?>
 				</tbody>

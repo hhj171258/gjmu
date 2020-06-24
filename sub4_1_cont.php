@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="/gjmu/css/reset.css?ver=1.0">
 <link rel="stylesheet" href="/gjmu/css/main.css?ver=1.0">
 <link rel="stylesheet" href="/gjmu/css/sub.css?ver=1.0">
-<link rel="stylesheet" href="/css/fontawesome/all.css?ver=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Noto+Serif+KR:wght@400;500;700&display=swap">
 <link rel="icon" href="/gjmu/favicon.png">
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -30,7 +30,7 @@
 			<h2>이용</h2>
 			<div class="lnb">
 				<ul class="lnb_inner">
-					<li class="home"><a href="/meuseum"></a></li>
+					<li class="home"><a href="/gjmu"></a></li>
 					<li>
 						<a href="#none">이용</a>
 						<ol>
@@ -43,7 +43,7 @@
 					<li>
 						<a href="#none">공지사항</a>
 						<ol>
-							<li><a href="/gjmu/sub4_1.html">공지사항</a></li>
+							<li><a href="/gjmu/sub4_1.php">공지사항</a></li>
 							<li><a href="#">교육</a></li>
 							<li><a href="#">예약</a></li>
 							<li><a href="#">문의하기</a></li>
@@ -65,9 +65,22 @@
 			mysqli_select_db($db, 'hhj171258');
 		 	
 			$numb = $_REQUEST["numb"];
+			
+			if($numb <> "" )
+			{	
+				if($_COOKIE["cunt".$numb] <> "1")
+				{	
+					$sql = "update gjmu_board set cunt = cunt +1 where Numb = '$numb'";
+					$result = mysqli_query($db, $sql);
+				}
+				setcookie('cunt'.$numb , '1', time() + (60 * 60 * 24) ,'/gjmu');
+			}
+
 			$sql = "select * from gjmu_board where numb ='$numb'";
 			$result = mysqli_query($db, $sql);
 			$data = mysqli_fetch_array($result);
+
+			$file = substr($data[5], -3);
 		?>
 		<div class="notice">
 			<h3>공지사항</h3>
@@ -80,13 +93,14 @@
 						<li>조회수: <?=$data[4]?></li>
 					</ul>
 					<ol>
-						<li class="hwp">
-							<a class="hwp" href="/gjmu/images/sub/<?=$data[4]?>"><?=$data[4]?></a><button><i class="fas fa-search"></i> 바로보기</button>
+						<li>
+							<a class="<?=$file?>" href="/gjmu/board/<?=$data[5]?>"><?=$data[5]?></a>
+							<?php  if($file <> 'zip') echo "<a href='/gjmu/board/$data[5]' target='_blank'><i class='fas fa-search'></i> 바로보기</a>"; ?>
 						</li>
 					</ol>
 				</div>
 				<div class="notice_detail_content">
-					<p><?=$data[5]?></p>
+					<p><?=$data[6]?></p>
 				</div>
 				<?php
 
