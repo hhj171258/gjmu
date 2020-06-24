@@ -84,15 +84,17 @@
 .notice table td:nth-child(2) a:hover{text-decoration: underline;}
 
 /* page */
-.notice .page{margin: 40px auto 0;width: 400px;}
-.notice .page li{float: left;width: 39px;height: 38px;border: 1px solid #b5b5b5;border-left: none;font-weight: 400;font-size: 1.6rem;line-height: 38px;text-align: center;color: #333;cursor: pointer;}
+.notice .page{margin-top: 40px;text-align: center;font-size: 0;}
+.notice .page li{display: inline-block;width: 39px;height: 38px;border: 1px solid #b5b5b5;border-left: none;font-weight: 400;font-size: 1.6rem;line-height: 38px;text-align: center;color: #333;cursor: pointer;}
 .notice .page li:first-child{width: 38px;border: 1px solid #b5b5b5;}
 .notice .page li:nth-of-type(3), .notice .page li:nth-last-of-type(2){margin-left: 20px; width: 38px;  border: 1px solid #b5b5b5;}
-.notice .page li.on{border-color: #000; background-color: #000;}
-.notice .page li a{display: block;}
+.notice .page li.disable{display: none;}
+.notice .page li.on{border-color: #000; background-color: #000; color: #fff;}
+.notice .page li a{display: inline-block;width: 100%;height: 100%;}
 .notice .page li.on a{ font-weight: 500; color: #fff;}
 .notice .page li:not(.on) a:hover{font-weight: 500; text-decoration: underline;}
 .notice .page .fas{display: inline;font-weight: 600;font-size: 1.3rem;}
+.notice .page + a{margin-top: -36px;}
 
 /* sub4_1_1.html 이용 > 공지사항 > 정기휴관일 조정 안내 */
 /* float */
@@ -126,5 +128,5 @@
 .notice .notice_detail .notice_detail_page dt::after{content:""; display: block; float: right; margin: 18px 16px;width: 1px; height: 14px; background-color: #999;}
 .notice .notice_detail .notice_detail_page dd{width: 1056.75px;}
 
-.notice table + a, .notice .notice_detail > a{display: block; float:right; margin-top: 24px; width: 98px; height: 30px; border: 1px solid #999; font-weight:400; font-size: 1.4rem; text-align:center; line-height: 30px; transition: all 0.1s ease;}
-.notice table + a:hover, .notice .notice_detail > a:hover{border: 1px solid #000; color: #fff; background-color: #000;}
+.notice ul + a, .notice .notice_detail > a{display: block; float:right; margin-top: 24px; width: 98px; height: 30px; border: 1px solid #999; font-weight:400; font-size: 1.4rem; text-align:center; line-height: 30px; transition: all 0.1s ease;}
+.notice ul + a:hover, .notice .notice_detail > a:hover{border: 1px solid #000; color: #fff; background-color: #000;}
