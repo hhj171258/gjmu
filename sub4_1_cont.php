@@ -66,7 +66,7 @@
 		 	
 			$numb = $_REQUEST["numb"];
 			$pageNow = $_REQUEST["pageNow"];
-
+			
 			if($numb <> "" )
 			{	
 				if($_COOKIE["cunt".$numb] <> "1")
@@ -93,12 +93,23 @@
 						<li>등록일: <?=$data[3]?></li>
 						<li>조회수: <?=$data[4]?></li>
 					</ul>
-					<ol>
-						<li>
-							<a class="<?=$file?>" href="/gjmu/board/<?=$data[5]?>"><?=$data[5]?></a>
-							<?php  if($file <> 'zip') echo "<a href='/gjmu/board/$data[5]' target='_blank'><i class='fas fa-search'></i> 바로보기</a>"; ?>
-						</li>
-					</ol>
+					<?php 
+						if($file <> "")
+						{
+							echo "<ol>
+									<li>
+										<a class='$file' href='/gjmu/board/$data[5]'>$data[5]</a>";
+							if($file <> "zip" && $file <> "hwp")
+							{
+								echo "<a href='/gjmu/board/$data[5]' target='_blank'>
+											<i class='fas fa-search'></i>
+											바로보기
+										</a>
+									</li>
+								</ol>";
+							}			
+						}
+					 ?>
 				</div>
 				<div class="notice_detail_content">
 					<p><?=$data[6]?></p>
@@ -126,7 +137,6 @@
 					$result = mysqli_query($db, $sql);
 					$data = mysqli_fetch_array($result);
 					$titlNext = $data[0];
-
 				?>
 				<dl class="notice_detail_page">
 					<dt class="fas fa-chevron-up">이전글</dt>	

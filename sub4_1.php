@@ -198,7 +198,7 @@
 					}
 				 ?>
 			</ul>
-			<a class="list" href="#">글쓰기</a>
+			<!-- <a class="list" href="#">글쓰기</a> -->
 		</div>
 		<!--// notice -->
 	</div>
